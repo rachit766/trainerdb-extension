@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "TrainerDB Assistant",
+  "version": "1.0",
+  "description": "Save favorites, notes and copy profile information on TrainerDB.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://trainerdb.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://trainerdb.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

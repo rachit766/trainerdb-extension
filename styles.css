@@ -1,0 +1,46 @@
+#trainerdb-panel{
+position:fixed;
+top:100px;
+right:20px;
+width:280px;
+background:#ffffff;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,.2);
+padding:15px;
+z-index:999999;
+font-family:Arial,sans-serif;
+}
+
+#trainerdb-panel h3{
+margin-top:0;
+font-size:18px;
+}
+
+#trainer-note{
+width:100%;
+height:100px;
+margin-bottom:10px;
+resize:none;
+}
+
+#trainerdb-panel button{
+width:100%;
+padding:10px;
+margin:5px 0;
+border:none;
+background:#2563eb;
+color:white;
+border-radius:8px;
+cursor:pointer;
+font-size:14px;
+}
+
+#trainerdb-panel button:hover{
+background:#1d4ed8;
+}
+
+#status{
+margin-top:10px;
+color:green;
+font-size:14px;
+}
